@@ -54,36 +54,44 @@ body {
 }
 
 .section2b {
-  background-color: #a1e0f3;
+  background-color: #000000;
   text-align: center;
 }
 
 .section3 {
-  background-color: #aae0a8;
+  background-color: rgb(245, 191, 118);
 }
 
 .section4 {
-  background-color: #969696;
+  background-color: #aae0a8;
 }
 
 .section5 {
-  background-color: #78be82;
+  background-color: #969696;
 }
 
 .section6 {
-  background-color: #bd7171;
+  background-color: #78be82;
 }
 
 .section7 {
+  background-color: #bd7171;
+}
+
+.section8 {
+  background-color: #b64e25;
+}
+
+.section9 {
   background-color: #e8cfe9;
 }
 
 h1 {
-  font-size: 10rem;
+  font-size: 9.5rem;
 }
 
 ul > li {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .fp-slidesNav ul li a.active span {
