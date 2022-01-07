@@ -1,19 +1,31 @@
-// import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 import banjo from "./assets/banjo.jpeg";
 
-import React from "react";
-// import ReactDOM from "react-dom";
-import ReactFullpage from "@fullpage/react-fullpage";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const App = () => (
-  <ReactFullpage
-    //fullpage options
-    licenseKey={"YOUR_KEY_HERE"}
-    scrollingSpeed={1000} /* Options here */
-    render={({ state, fullpageApi }) => {
-      return (
-        <ReactFullpage.Wrapper>
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import Swiper core and required modules
+import SwiperCore, { Pagination, Navigation } from "swiper";
+
+// install Swiper modules
+SwiperCore.use([Pagination, Navigation]);
+
+const App = () => {
+  return (
+    <>
+      <Swiper
+        pagination={{
+          type: "progressbar",
+        }}
+        navigation={true}
+        className="mySwiper"
+      >
+        <SwiperSlide>
           <div className="section section1">
             <h1>About me 🤠</h1>
             <ul>
@@ -29,6 +41,8 @@ const App = () => (
               <li>According to GH Copilot, I'm a big fan of the 90's</li>
             </ul>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="section section2a">
             <h1>Banjo 🐶</h1>
             <ul>
@@ -38,9 +52,13 @@ const App = () => (
               <li>Recently got a roommate named Toby, and is "adjusting"</li>
             </ul>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="section section2b">
-            <img className="image" src={banjo} alt="Banjo" />
+            <img src={banjo} alt="Banjo" />
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="section section3">
             <h1>Amazon</h1>
             <ul>
@@ -49,28 +67,39 @@ const App = () => (
               <li>I'm currently working on DataStore 💛</li>
             </ul>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="section section4">
             <h1>I play music! 🥁 🎸</h1>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="section section5">
             <h1>I once hated coding 😱</h1>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="section section6">
             <h1>I love the outdoors 🌲</h1>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="section section7">
             <h1>My wife is a veterinarian / acupuncturist for dogs 👩🏻‍⚕️</h1>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="section section8">
             <h1>I recently got really into country 🤠 🏜 🌵</h1>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="section section9">
             <h1>Let's hang out! ☕️</h1>
           </div>
-        </ReactFullpage.Wrapper>
-      );
-    }}
-  />
-);
-
+        </SwiperSlide>
+      </Swiper>
+    </>
+  );
+};
 export default App;
