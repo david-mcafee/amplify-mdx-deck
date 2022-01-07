@@ -34,7 +34,7 @@ const App = () => (
             </ul>
           </div>
           <div className="section section2b">
-            <img src={banjo} alt="Banjo" width="60%" />
+            <img className="image" src={banjo} alt="Banjo" />
           </div>
           <div className="section section3">
             <h1>I play music! 🥁 🎸</h1>

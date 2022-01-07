@@ -55,6 +55,7 @@ body {
 
 .section2b {
   background-color: #a1e0f3;
+  text-align: center;
 }
 
 .section3 {
@@ -89,7 +90,6 @@ ul > li {
   background-color: chartreuse;
 }
 
-image {
-  /* height: 100px; */
-  width: 50px;
+.image {
+  height: 100% !important;
 }
