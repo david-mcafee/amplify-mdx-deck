@@ -1,5 +1,6 @@
 // import logo from "./logo.svg";
 import "./App.css";
+import banjo from "./assets/banjo.jpeg";
 
 import React from "react";
 // import ReactDOM from "react-dom";
@@ -23,7 +24,7 @@ const App = () => (
               <li>According to GH Copilot, I'm a big fan of the 90's</li>
             </ul>
           </div>
-          <div className="section section2">
+          <div className="section section2a">
             <h1>Banjo 🐶</h1>
             <ul>
               <li>Is rescue from Oakland, CA</li>
@@ -31,6 +32,9 @@ const App = () => (
               <li>Loves to lay in the sun</li>
               <li>Recently got a roommate named Toby</li>
             </ul>
+          </div>
+          <div className="section section2b">
+            <img src={banjo} alt="Banjo" width="60%" />
           </div>
           <div className="section section3">
             <h1>I play music! 🥁 🎸</h1>
